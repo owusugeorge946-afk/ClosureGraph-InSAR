@@ -1,0 +1,17 @@
+# Python and notebook files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+
+# Large training/evaluation artifacts: archive externally and record the DOI/URL
+data/**/*.h5
+data/**/*.hdf5
+models/**/*.pt
+models/**/*.pth
+results/locked_test_batches/
+
+# Credentials and local configuration
+.env
+*.pem
+*.key

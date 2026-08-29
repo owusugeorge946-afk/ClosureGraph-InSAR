@@ -1,0 +1,15 @@
+category,relative_path,required_for,notes
+configuration,configs/production_dataset_config_v1.json,all scripts,Production data configuration and checksum
+configuration,configs/closuregraph_cell9_repair_protocol_v2.json,Cells 9 and 10,Frozen training protocol
+data,data/production_v1/,Cell 9 and Cell 10,Generated train validation and locked-test HDF5 split files
+model,models/production_v1_repair_v2/closuregraph_baseline_production_v1_repair_v2_seed31415_best.pt,Cell 10,Frozen baseline checkpoint
+model,models/production_v1_repair_v2/closuregraph_baseline_production_v1_repair_v2_seed27182_best.pt,Cell 10,Frozen baseline checkpoint
+model,models/production_v1_repair_v2/closuregraph_baseline_production_v1_repair_v2_seed16180_best.pt,Cell 10,Frozen baseline checkpoint
+model,models/production_v1_repair_v2/closuregraph_graph_amplitude_production_v1_repair_v2_seed31415_best.pt,Cell 10,Frozen graph plus amplitude checkpoint
+model,models/production_v1_repair_v2/closuregraph_graph_amplitude_production_v1_repair_v2_seed27182_best.pt,Cell 10,Frozen graph plus amplitude checkpoint
+model,models/production_v1_repair_v2/closuregraph_graph_amplitude_production_v1_repair_v2_seed16180_best.pt,Cell 10,Frozen graph plus amplitude checkpoint
+result,results/tables/closuregraph_cell10_locked_test_summary_locked_test_v1.csv,Cell 11,Final locked-test summary
+result,results/tables/closuregraph_cell10_locked_test_significance_locked_test_v1.csv,Cell 11,Paired statistical results
+result,results/tables/closuregraph_cell10_locked_test_seed_summary_locked_test_v1.csv,Cell 11,Per-seed final results
+result,results/tables/closuregraph_cell10_locked_test_records_locked_test_v1.csv,Cell 11,Per-sequence final records
+result,results/logs/closuregraph_cell10_locked_test_complete_locked_test_v1.json,Cell 11,Completion marker and audit record

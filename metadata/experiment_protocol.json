@@ -1,0 +1,20 @@
+{
+  "project": "ClosureGraph-InSAR",
+  "data_type": "synthetic multitemporal LOS displacement sequences",
+  "sequence_length": 20,
+  "image_height": 128,
+  "image_width": 128,
+  "splits": {
+    "train_sequences": 20000,
+    "validation_sequences": 2000,
+    "locked_test_sequences": 2000
+  },
+  "models": {
+    "baseline": "Matched separable 3D U-Net without temporal graph refinement",
+    "graph_amplitude": "Matched separable 3D U-Net with reliability-weighted temporal graph refinement"
+  },
+  "training_seeds": [31415, 27182, 16180],
+  "graph_lags": [1, 2, 4, 8],
+  "checkpoint_selection": "Validation common score only",
+  "locked_test_policy": "One final evaluation after checkpoint freezing"
+}
